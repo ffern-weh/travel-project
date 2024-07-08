@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to AI Travel Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Discover Your Next Adventure</h2>
+        <p>Explore the world with personalized itineraries and recommendations powered by AI.</p>
+        <img src="https://example.com/travel-image.jpg" alt="Travel Image" class="hero-image">
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team of travel enthusiasts committed to making your travel planning easier and more personalized using cutting-edge AI technology.</p>
+    </section>
+
+    <section id="destinations">
+        <h2>Destinations</h2>
+        <div class="destination" onclick="showDetails('japan')">
+            <h3>Japan</h3>
+            <p>Explore the Land of the Rising Sun with tailored itineraries and hidden gems.</p>
+            <img src="https://example.com/japan.jpg" alt="Japan" class="destination-image">
+        </div>
+        <div class="destination" onclick="showDetails('vietnam')">
+            <h3>Vietnam</h3>
+            <p>Discover the vibrant culture and stunning landscapes of Vietnam.</p>
+            <img src="https://example.com/vietnam.jpg" alt="Vietnam" class="destination-image">
+        </div>
+    </section>
+
+    <section id="details" style="display:none;">
+        <h2 id="destination-title"></h2>
+        <div id="tabs">
+            <button class="tab-button" onclick="openTab('itinerary')">Itineraries</button>
+            <button class="tab-button" onclick="openTab('food')">Food</button>
+            <button class="tab-button" onclick="openTab('places')">Places to Visit</button>
+            <button class="tab-button" onclick="openTab('hotels')">Hotels</button>
+            <button class="tab-button" onclick="openTab('underrated')">Underrated Places</button>
+            <button class="tab-button" onclick="openTab('mustvisit')">Must-Visit Places</button>
+        </div>
+        <div id="destination-content">
+            <!-- Tab content will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
